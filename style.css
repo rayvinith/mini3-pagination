@@ -9,25 +9,3 @@ height: 100vh;
     transform: translate(0%,50%);
     
 }
-
-.products{
-    max-width: 400px;
-    max-height: 400px;
-    align-items: center;
-    justify-content: center;
-}
-
-.admin{
-    background-color: red;
-    margin-top: 50%;
-align-items: center;
-justify-content: center;
-}
-
-@media (max-width: 768px){
-.admin{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-}

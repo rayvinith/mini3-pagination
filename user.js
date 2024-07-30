@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="card h-100">
                     <img src="${item.imageUrl}" class="card-img-top" alt="${item.name}">
                     <div class="card-body">
-                        <h5 class="card-title">${item.name}</h5>
-                        <p class="card-text">$${item.price}</p>
+                        <p class="btn btn-primary">${item.name}</p>
+                        <p class="btn btn-warning ">$${item.price}</p>
                     </div>
                 </div>
             </div>
