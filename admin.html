@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+   
+
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">Admin Panel</h1>
+      <button id="logoutButton" class="btn btn-danger mb-4">Logout</button>
+      <form id="menuForm" class="mb-4">
+        <div class="form-group">
+          <label for="itemName">Item Name</label>
+          <input type="text" class="form-control" id="itemName" required />
+        </div>
+        <div class="form-group">
+          <label for="itemPrice">Item Price</label>
+          <input type="number" class="form-control" id="itemPrice" required />
+        </div>
+        <div class="form-group">
+          <label for="itemImageUrl">Item Image URL</label>
+          <input type="url" class="form-control" id="itemImageUrl" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Add Item</button>
+      </form>
+      <div class="form-group">
+        <label for="sortOptions">Sort by Price</label>
+        <select id="sortOptions" class="form-control">
+          <option value="">Select</option>
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="priceFilter">Filter by Max Price</label>
+        <input
+          type="range"
+          class="form-control-range"
+          id="priceFilter"
+          min="0"
+          max="100"
+        />
+        <span id="priceRange">0 - 100</span>
+      </div>
+
+      <div class="row" id="menu-items">
+
+
+<!--all items will be displayed here-->
+        
+      </div>
+
+      <a href="user.html" class="col btn btn-warning mt-4 p-3">Go to User Page</a>
+    </div>
+    </div>
+    <script src="admin.js"></script>
+  </body>
+</html>

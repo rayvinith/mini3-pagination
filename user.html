@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Restaurant Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Restaurant Menu</h1>
+
+      <div class="form-group">
+        <label for="sortOptions">Sort by Price:</label>
+        <select id="sortOptions" class="form-control">
+          <option value="default">Default</option>
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="priceFilter">Filter by Price (0 to max):</label>
+        <input
+          type="range"
+          id="priceFilter"
+          class="form-control"
+          min="0"
+          max="100"
+          step="1"
+        />
+        <span id="priceRange">0 - 100</span>
+      </div>
+
+      <div class="row" id="menu-items"></div>
+
+      <nav>
+        <ul
+          id="pagination-container"
+          class="pagination justify-content-center mt-4"
+        ></ul>
+      </nav>
+      <a href="index.html" class="btn btn-warning btn-block"> Home Page</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="user.js"></script>
+  </body>
+</html>
